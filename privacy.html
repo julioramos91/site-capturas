@@ -7,32 +7,55 @@
   <h1>Política de Privacidade</h1>
   <p><small>Atualizado em <span id="d"></span></small></p>
 
-  <h2>Dados</h2>
+  <h2>Resumo</h2>
+  <p>Este aplicativo solicita permissões do Google para <strong>ler emails em modo somente leitura</strong> e
+     <strong>registrar resultados em planilhas do próprio usuário</strong>. Não mantemos servidores próprios e não
+     compartilhamos dados com terceiros.</p>
+
+  <h2>Dados coletados/tratados</h2>
   <ul>
-    <li>Metadados de emails (remetente, destinatário, assunto, data).</li>
-    <li>Trechos estritamente necessários para identificar notificações e valores.</li>
+    <li>Metadados de mensagens que correspondem aos filtros (remetente, destinatário, assunto, data/hora).</li>
+    <li>Trechos estritamente necessários para identificar notificações e valores (ex.: saldos/códigos) a partir do corpo do email.</li>
+    <li>Não é feita cópia integral de mensagens; não acessamos rascunhos, spam ou lixeira.</li>
   </ul>
 
-  <h2>Uso</h2>
-  <p>Organização e registro em planilhas do próprio usuário para consulta pessoal.</p>
+  <h2>Finalidade</h2>
+  <p>Organizar e registrar, em Google Sheets do próprio usuário, ocorrências como saldos, cupons e avisos,
+     de forma automatizada para consulta pessoal.</p>
 
-  <h2>Armazenamento</h2>
-  <p>Somente em Google Sheets do próprio usuário. Nenhum servidor externo.</p>
+  <h2>Armazenamento e retenção</h2>
+  <ul>
+    <li>Os resultados são gravados <strong>exclusivamente</strong> em planilhas do Google na conta do usuário.</li>
+    <li>Não copiamos dados para servidores externos.</li>
+    <li>A retenção é controlada pelo usuário (pode editar/apagar linhas a qualquer momento).</li>
+  </ul>
 
   <h2>Compartilhamento</h2>
-  <p>Não há compartilhamento com terceiros.</p>
+  <p>Não há compartilhamento de dados com terceiros, nem uso para publicidade.</p>
 
-  <h2>Permissões</h2>
+  <h2>Segurança e escopos solicitados</h2>
+  <p>O acesso ocorre via APIs Google com os escopos mínimos necessários:</p>
   <ul>
-    <li>gmail.readonly</li>
-    <li>spreadsheets</li>
-    <li>userinfo.email</li>
-    <li>script.scriptapp</li>
-    <li>script.container.ui</li>
+    <li><code>https://www.googleapis.com/auth/gmail.readonly</code> — ler mensagens relevantes para extração.</li>
+    <li><code>https://www.googleapis.com/auth/spreadsheets</code> — escrever resultados na planilha do usuário.</li>
+    <li><code>https://www.googleapis.com/auth/userinfo.email</code> — identificar a conta que executa.</li>
+    <li><code>https://www.googleapis.com/auth/script.scriptapp</code> — criar/gerenciar gatilhos de execução.</li>
+    <li><code>https://www.googleapis.com/auth/script.container.ui</code> — exibir painel/menus no Google Sheets.</li>
   </ul>
 
-  <h2>Controle</h2>
-  <p>Permissões podem ser revogadas em <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">myaccount.google.com/permissions</a>. Dados podem ser excluídos na planilha.</p>
+  <h2>Controle do usuário</h2>
+  <ul>
+    <li>Revogar acesso: <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">myaccount.google.com/permissions</a>.</li>
+    <li>Exclusão de dados: apagar diretamente as linhas na planilha vinculada.</li>
+  </ul>
+
+  <h2>Conformidade com a política do Google</h2>
+  <p>Este app segue a <em>Google API Services User Data Policy</em>, incluindo os requisitos de
+     <strong>Limited Use</strong> para dados do Gmail: uso limitado à funcionalidade do app, sem transferência a terceiros
+     e sem uso para anúncios.</p>
+
+  <h2>Contato</h2>
+  <p>E-mail: <a href="mailto:capturas.contas.lcg@gmail.com">capturas.contas.lcg@gmail.com</a></p>
 
   <script>document.getElementById('d').textContent=new Date().toLocaleDateString('pt-BR');</script>
 </body>
